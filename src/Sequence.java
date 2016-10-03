@@ -4,7 +4,7 @@
 public class Sequence {
     private String data;
     public Sequence(String in) {
-        data = in;
+        data = in.toLowerCase();
     }
 
     public String getData() {

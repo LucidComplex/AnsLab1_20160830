@@ -19,15 +19,6 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="e4bff" class="javax.swing.JTextArea" binding="sequenceArea">
-            <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="50"/>
-              </grid>
-              <gridbag weightx="1.0" weighty="1.0"/>
-            </constraints>
-            <properties/>
-          </component>
           <component id="fd7ab" class="javax.swing.JLabel" binding="textAreaLabel">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -64,6 +55,20 @@
               <text value="Choose FASTA File..."/>
             </properties>
           </component>
+          <scrollpane id="6fa7f">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="1.0"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="e4bff" class="javax.swing.JTextArea" binding="sequenceArea">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
         </children>
       </grid>
       <component id="21707" class="javax.swing.JButton" binding="translateButton" default-binding="true">
@@ -91,6 +96,15 @@
         </constraints>
         <properties>
           <text value="&amp;Frequency and Percentage Table"/>
+        </properties>
+      </component>
+      <component id="fc7ce" class="javax.swing.JButton" binding="saveAsFASTAFileButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Save as FASTA File..."/>
         </properties>
       </component>
     </children>

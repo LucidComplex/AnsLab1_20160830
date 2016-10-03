@@ -31,7 +31,7 @@ public class Translator {
         trie.insert(new Protein("Valine"), "gtt", "gtc", "gta", "gtg");
     }
 
-    public List<Protein> translate(Sequence s) {
+    public List<Protein> translate(Sequence s) throws StringIndexOutOfBoundsException {
         String text = s.getData();
         List<Protein> proteins = new ArrayList<>();
         for (int i = 0; i < text.length(); i += 3) {
