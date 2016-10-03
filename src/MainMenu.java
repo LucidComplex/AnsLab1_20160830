@@ -45,7 +45,9 @@ public class MainMenu {
                 }
                 StringBuilder builder = new StringBuilder();
                 for (List<Protein> proteinList : proteins) {
-                    builder.append(proteinList.toString());
+                    for (Protein p : proteinList) {
+                        builder.append(p.toString());
+                    }
                     builder.append("\n");
                 }
                 resultsArea.setText(builder.toString());
@@ -133,7 +135,7 @@ public class MainMenu {
     }
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("MainMenu");
+        JFrame frame = new JFrame("DNA to Protein");
         frame.setContentPane(new MainMenu().mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
